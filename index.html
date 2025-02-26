@@ -1,1 +1,95 @@
-hello mukul
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<!-- Include FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+    }
+    .profile-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        padding: 20px;
+    }
+    .profile-card img {
+        border: 3px solid black; /* Adds a black border */
+        border-radius: 10px; /* Optional: keeps corners rounded */
+        width: 100%;
+        height: auto;
+    }
+    .profile-card h2 {
+        margin: 10px 0 5px;
+        font-size: 24px;
+    }
+    .profile-card p {
+        margin: 5px 0;
+        color: #777;
+    }
+    .profile-card .social-icons {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .profile-card .social-icons a {
+        text-decoration: none;
+        font-size: 36px;  /* Increase icon size */
+        margin: 0 15px;
+    }
+    /* Instagram Icon Custom Color */
+    .social-icons a.instagram {
+        background: linear-gradient(45deg, #f58529, #d62b97, #8134af, #515bd4); /* Instagram gradient */
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+        }
+    /* LinkedIn Icon Custom Color */
+    .social-icons a.linkedin {
+        color: #0077b5; /* LinkedIn Blue */
+    }
+    .profile-card .contact-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .contact-btn:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<div class="profile-card">
+    <img src="https://i.pinimg.com/564x/4e/8a/4e/4e8a4e6a422a1addf3a5474a3b2584da.jpg" alt="Profile Image">
+    <h2>Mukul Narwani</h2>
+    <p>DevOps Engineer</p>
+    <p>Lucknow, Uttar Pradesh</p>
+    <div class="social-icons">
+        <!-- Instagram icon with gradient -->
+        <a href="https://www.instagram.com/mukulnarwani?igsh=MXg4eHZhaWheW9wag%3D%3D&utm_source=qr" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <!-- LinkedIn icon with LinkedIn blue -->
+        <a href="https://www.linkedin.com/in/mukulnarwani/" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    <a href="mailto:narwani.mukul96@gmail.com" class="contact-btn">Contact</a>
+</div>
+</body>
